@@ -17,8 +17,8 @@
     <string name="fb_login_protocol_scheme" translatable="false">fb2925161510862306</string>
 
 
-    <string name="banner_key" translatable="false">ca-app-pub-3050564412171997/6097534447</string>
-    <string name="interstitial" translatable="false">ca-app-pub-3050564412171997/3719068527</string>
+    <string name="banner_key" translatable="false">ca-app-pub-3050564412171997/2906504132</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3050564412171997/1593422465</string>
 
     <!--Test-->
     <!--<string name="banner_key" translatable="false">ca-app-pub-3940256099942544/6300978111</string>

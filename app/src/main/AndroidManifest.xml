@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="dev.mem.rocket.sanya">
+    package="ochen.mem.rocket.sanyakekes">
 
     <application
-        android:name="dev.mem.rocket.sanya.MyApp"
+        android:name="ochen.mem.rocket.sanyakekes.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,6 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3050564412171997~7487912829"/>
 
         <!--        <activity-->
         <!--            android:name=".TestActivity"-->
@@ -26,11 +30,11 @@
         <!--                <category android:name="android.intent.category.LAUNCHER" />-->
         <!--            </intent-filter>-->
         <!--        </activity>-->
-        <activity android:name="dev.mem.rocket.sanya.PrivacyPoliceActivity"></activity>
+        <activity android:name="ochen.mem.rocket.sanyakekes.PrivacyPoliceActivity"></activity>
 
 
         <activity
-            android:name="dev.mem.rocket.sanya.SplashActivity"
+            android:name="ochen.mem.rocket.sanyakekes.SplashActivity"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
@@ -42,48 +46,48 @@
         </activity>
 
         <activity
-            android:name="dev.mem.rocket.sanya.MainActivity"
+            android:name="ochen.mem.rocket.sanyakekes.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="dev.mem.rocket.sanya.Volume.NoAdsFrag"
-            android:parentActivityName="dev.mem.rocket.sanya.MainActivity"
+            android:name="ochen.mem.rocket.sanyakekes.Volume.NoAdsFrag"
+            android:parentActivityName="ochen.mem.rocket.sanyakekes.MainActivity"
             tools:ignore="UnusedAttribute">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="dev.mem.rocket.sanya.MainActivity" />
+                android:value="ochen.mem.rocket.sanyakekes.MainActivity" />
         </activity>
         <activity
-            android:name="dev.mem.rocket.sanya.PPP.PowerSaving_popup"
+            android:name="ochen.mem.rocket.sanyakekes.PPP.PowerSaving_popup"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="dev.mem.rocket.sanya.Ultra_PopUp"
+            android:name="ochen.mem.rocket.sanyakekes.Ultra_PopUp"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="dev.mem.rocket.sanya.BCJ.BatterySaver_Black"
+            android:name="ochen.mem.rocket.sanyakekes.BCJ.BatterySaver_Black"
             android:screenOrientation="portrait" />
         <activity
-            android:name="dev.mem.rocket.sanya.Noraml_Mode"
+            android:name="ochen.mem.rocket.sanyakekes.Noraml_Mode"
             android:screenOrientation="portrait" />
         <activity
-            android:name="dev.mem.rocket.sanya.PPP.PowerSaving_Complition"
+            android:name="ochen.mem.rocket.sanyakekes.PPP.PowerSaving_Complition"
             android:screenOrientation="portrait" />
         <activity
-            android:name="dev.mem.rocket.sanya.AAA.Applying_Ultra"
+            android:name="ochen.mem.rocket.sanyakekes.AAA.Applying_Ultra"
             android:screenOrientation="portrait" />
         <activity
-            android:name="dev.mem.rocket.sanya.Scanning_Junk"
+            android:name="ochen.mem.rocket.sanyakekes.Scanning_Junk"
             android:screenOrientation="portrait" />
         <activity
-            android:name="dev.mem.rocket.sanya.BCJ.Cpu_Scanner"
+            android:name="ochen.mem.rocket.sanyakekes.BCJ.Cpu_Scanner"
             android:screenOrientation="portrait" />
         <activity
-            android:name="dev.mem.rocket.sanya.LocaleActivity"
+            android:name="ochen.mem.rocket.sanyakekes.LocaleActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="dev.mem.rocket.sanya.PPP.Pick_Apps"
+            android:name="ochen.mem.rocket.sanyakekes.PPP.Pick_Apps"
             android:screenOrientation="portrait"
             android:theme="@style/Transparent" />
         <activity
@@ -91,12 +95,12 @@
             android:theme="@style/TranslucentTheme"
             tools:replace="android:theme" />
         <activity
-            android:name="dev.mem.rocket.sanya.lang.MainActivityLauncher"
+            android:name="ochen.mem.rocket.sanyakekes.lang.MainActivityLauncher"
             android:theme="@style/SplashTheme" />
         <activity
-            android:name="dev.mem.rocket.sanya.lang.SettingsActivity"
+            android:name="ochen.mem.rocket.sanyakekes.lang.SettingsActivity"
             android:configChanges="locale" />
-        <activity android:name="dev.mem.rocket.sanya.lang.BetweenActivity" />
+        <activity android:name="ochen.mem.rocket.sanyakekes.lang.BetweenActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -106,12 +110,12 @@
             android:name="com.facebook.sdk.CodelessDebugLogEnabled"
             android:value="true" />
 
-        <receiver android:name="dev.mem.rocket.sanya.AAA.Alarm_Booster" />
-        <receiver android:name="dev.mem.rocket.sanya.AAA.Alarm_Junk" />
-        <receiver android:name="dev.mem.rocket.sanya.AAA.AlarmBroadCastReceiver" />
-        <receiver android:name="dev.mem.rocket.sanya.AlarmReceiver" />
+        <receiver android:name="ochen.mem.rocket.sanyakekes.AAA.Alarm_Booster" />
+        <receiver android:name="ochen.mem.rocket.sanyakekes.AAA.Alarm_Junk" />
+        <receiver android:name="ochen.mem.rocket.sanyakekes.AAA.AlarmBroadCastReceiver" />
+        <receiver android:name="ochen.mem.rocket.sanyakekes.AlarmReceiver" />
 
-        <receiver android:name="dev.mem.rocket.sanya.AAA.AppListener">
+        <receiver android:name="ochen.mem.rocket.sanyakekes.AAA.AppListener">
             <intent-filter android:priority="100">
                 <action android:name="android.intent.action.PACKAGE_INSTALL" />
                 <action android:name="android.intent.action.PACKAGE_ADDED" />
@@ -119,7 +123,7 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-        <receiver android:name="dev.mem.rocket.sanya.PPP.PowerConnected">
+        <receiver android:name="ochen.mem.rocket.sanyakekes.PPP.PowerConnected">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
             </intent-filter>
@@ -135,7 +139,7 @@
         </receiver>
 
         <service
-            android:name="dev.mem.rocket.sanya.service.CleanService"
+            android:name="ochen.mem.rocket.sanyakekes.service.CleanService"
             android:label="@string/accesibilityService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
