@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="hh_remaining"                             >残り 6  時間 0  分</string>
+    <string name="hhh_remaining"                            >残り 8  時間 25 分</string>
+    <string name="hhhh_remaining"                           >残り 12 時間 55 分</string>
+    <string name="hhhhh_remaining"                          >残り 19 時間 2  分</string>
+    <string name="hhhhhh_remaining"                         >残り 22 時間 0  分</string>
+    <string name="hhhhhhh_remaining"                        >残り 28 時間 15 分</string>
+    <string name="hhhhhhhh_remaining"                       >残り 30 時間 55 分</string>
+    <string name="hhhhhhhhh_remaining"                      >残り 38 時間 5  分</string>
+    <string name="hhhhhhhhhh_remaining"                     >残り 60 時間 0  分</string>
+
+
+    <string name="title_notefication"                       >パフォーマンスに関する問題</string>
+    <string name="detail_notification"                      >携帯にジャンクファイルが多いためパフォーマンスの問題が生じています。</string>
+    <string name="remove_ads"                               >広告を除去</string>
+    <string name="extended_battery_up_to"                   >電池の持ち時間を最大次の量延長:</string>
+    <string name="battery_remaining"                        >電池の残り時間</string>
+    <string name="h_remaining"                              >残り 3 時間 55 分</string>
+    <string name="this_app_is_already_added"                >このアプリは既に追加されています</string>
+    <string name="cooled_CPU_to"                            >CPU を 25.3°C に冷却しました</string>
+    <string name="MB_of_junk_files_are_cleared"             >MB のジャンクファイルが消去されました</string>
+    <string name="cleared"                                  >消去済み</string>
+    <string name="phone_is_already_optimized"               >携帯は既に最適化済みです</string>
+    <string name="scanning"                                 >スキャン中...</string>
+    <string name="found"                                    >検出</string>
+    <string name="storage"                                  >ストレージ</string>
+    <string name="optimiing"                                >最適化中...</string>
+    <string name="charge_booster"                           >充電ブースター</string>
+    <string name="used_mem"                                 >使用メモリー （メモリー）</string>
+    <string name="crystal_clear"                            >明瞭</string>
+    <string name="no_junk_files_already_cleaned"            >既にクリーニングされたジャンクファイルがありません。</string>
+    <string name="junk_cleaner"                             >ジャンククリーナー</string>
+    <string name="currently_no_app_causing_overheating"     >現在オーバーヒートの原因となっているアプリはありません</string>
+    <string name="normal"                                   >普通</string>
+    <string name="cpu_temperature_is_good"                  >CPU 温度は正常です</string>
+    <string name="cpu_temperature_is_already_normal"        >CPU 温度は既に通常です</string>
+    <string name="cpu_cooler"                               >CPU クーラー</string>
+    <string name="battery_saver"                            >バッテリーセーバー</string>
+    <string name="running_processes"                        >実行中のプロセス</string>
+    <string name="ram_usage"                                >Ram の使用状況</string>
+    <string name="charging_time_remaning"                   >残り充電時間</string>
+    <string name="overheated"                               >オーバーヒート</string>
+    <string name="application_class_problem"                >ApplicationsClass が問題を起こしています。冷却ボタンを押してください</string>
+    <string name="cooling_cpu"                              >CPU を冷却中</string>
+    <string name="storage2"                                 >ストレージ</string>
+    <string name="apply"                                    >適用</string>
+    <string name="extended_battery_up_to_10h_30m"           >電池の持ち時間を最大 10 時間 30 分延長</string>
+    <string name="add"                                      >追加</string>
+    <string name="ultra_power_saving_mode"                  >ウルトラ省電力モード</string>
+    <string name="disable_extreme_power_saving_mode"        >エクストリーム省電力モードを無効にする</string>
+    <string name="camera"                                   >カメラ</string>
+    <string name="calculator"                               >計算機</string>
+    <string name="alaram"                                   >アラーム</string>
+    <string name="map"                                      >マップ</string>
+    <string name="play_store"                               >Play ストア</string>
+    <string name="limited_apps_are_avalible_and_some_apps_and_features_may_not_work_when_ultra_power_saving_mode_is_enabled"
+                                                            >ウルトラ小電力モードを有効にすると、利用可能なアプリが制限され、アプリと機能の一部は動作しない場合があります。</string>
+    <string name="add_applications"                         >アプリケーションを追加</string>
+    <string name="my_message"                               >マイメッセージ</string>
+    <string name="decreasing_brightness_upto_90"            >明度を最大 90% 低下させています</string>
+    <string name="decreasing_device_performance"            >デバイスのパフォーマンスを低下させています</string>
+    <string name="closing_background_apps_and_services"     >バックグラウンドのアプリとサービスを閉じています</string>
+    <string name="locking_acess_to_power_consuming_apps"    >電力を消費するアプリへのアクセスをロックしています</string>
+    <string name="closing_all_power_consuming_functions"    >すべての電力を消費する機能を閉じています</string>
+    <string name="optimize"                                 >最適化</string>
+    <string name="optimized"                                >最適化済み</string>
+    <string name="battery_power_20"                         >電池残量 20%</string>
+    <string name="_16h_21m_remaning"                        >残り 16 時間 21 分</string>
+    <string name="extreme"                                  >エクストリーム</string>
+    <string name="normal_mode"                              >ノーマル</string>
+    <string name="ultra"                                    >ウルトラ</string>
+    <string name="cool_down"                                >冷却</string>
+    <string name="cooled"                                   >冷却済み</string>
+    <string name="clean"                                    >クリーニング</string>
+    <string name="cleaned"                                  >クリーニング済み</string>
+    <string name="cache_memory"                             >キャッシュメモリ－</string>
+    <string name="temporary_files"                          >一時ファイル</string>
+    <string name="residual_files"                           >残存ファイル</string>
+    <string name="system_junk"                              >システムジャンク</string>
+    <string name="cpu_scanner1"                             >明度を最大 80% に制限</string>
+    <string name="cpu_scanner2"                             >デバイスのパフォーマンスを低下させる</string>
+    <string name="cpu_scanner3"                             >電力を消費する ApplicationsClass をすべて閉じる</string>
+    <string name="cpu_scanner4"                             >Bluetooth、画面の回転、同期などのシステムサービスを閉じます。</string>
+</resources>

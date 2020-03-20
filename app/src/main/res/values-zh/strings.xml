@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="hh_remaining"                             >剩餘 6  小時 0  分鐘</string>
+    <string name="hhh_remaining"                            >剩餘 8  小時 25 分鐘</string>
+    <string name="hhhh_remaining"                           >剩餘 12 小時 55 分鐘</string>
+    <string name="hhhhh_remaining"                          >剩餘 19 小時 2  分鐘</string>
+    <string name="hhhhhh_remaining"                         >剩餘 22 小時 0  分鐘</string>
+    <string name="hhhhhhh_remaining"                        >剩餘 28 小時 15 分鐘</string>
+    <string name="hhhhhhhh_remaining"                       >剩餘 30 小時 55 分鐘</string>
+    <string name="hhhhhhhhh_remaining"                      >剩餘 38 小時 5  分鐘</string>
+    <string name="hhhhhhhhhh_remaining"                     >剩餘 60 小時 0  分鐘</string>
+
+    <string name="title_notefication"                       >性能問題</string>
+    <string name="detail_notification"                      >由於存在大量垃圾檔案，手機執行速度很慢。</string>
+    <string name="remove_ads"                               >移除廣告</string>
+    <string name="extended_battery_up_to"                   >延長電池電量至</string>
+    <string name="battery_remaining"                        >電池剩餘</string>
+    <string name="h_remaining"                              >剩餘 3 小時 55 分鐘</string>
+    <string name="this_app_is_already_added"                >此應用已被添加</string>
+    <string name="cooled_CPU_to"                            >已將 CPU 冷卻至 25.3°C</string>
+    <string name="MB_of_junk_files_are_cleared"             >已清除 MB 垃圾檔案</string>
+    <string name="cleared"                                  >已清除</string>
+    <string name="phone_is_already_optimized"               >手機已優化</string>
+    <string name="scanning"                                 >正在掃描...</string>
+    <string name="found"                                    >已找到</string>
+    <string name="storage"                                  >儲存</string>
+    <string name="optimiing"                                >正在優化...</string>
+    <string name="charge_booster"                           >充電加速工具</string>
+    <string name="used_mem"                                 >已用記憶體</string>
+    <string name="crystal_clear"                            >乾淨剔透</string>
+    <string name="no_junk_files_already_cleaned"            >沒有垃圾檔案已被清除。</string>
+    <string name="junk_cleaner"                             >垃圾清潔工具</string>
+    <string name="currently_no_app_causing_overheating"     >當前沒有應用導致過熱</string>
+    <string name="normal"                                   >正常</string>
+    <string name="cpu_temperature_is_good"                  >CPU 溫度很好</string>
+    <string name="cpu_temperature_is_already_normal"        >CPU 溫度已正常</string>
+    <string name="cpu_cooler"                               >CPU 冷卻工具</string>
+    <string name="battery_saver"                            >省電工具</string>
+    <string name="running_processes"                        >正在運行的行程</string>
+    <string name="ram_usage"                                >記憶體使用</string>
+    <string name="charging_time_remaning"                   >充電時間剩餘</string>
+    <string name="overheated"                               >過熱</string>
+    <string name="application_class_problem"                >ApplicationsClass 正在導致冷卻出現問題</string>
+    <string name="cooling_cpu"                              >冷卻 CPU</string>
+    <string name="storage2"                                 >儲存</string>
+    <string name="apply"                                    >套用</string>
+    <string name="extended_battery_up_to_10h_30m"           >延長電池電量至 10 小時 30 分鐘</string>
+    <string name="add"                                      >添加</string>
+    <string name="ultra_power_saving_mode"                  >超級節電模式</string>
+    <string name="disable_extreme_power_saving_mode"        >禁用極端節電模式</string>
+    <string name="camera"                                   >相機</string>
+    <string name="calculator"                               >計算機</string>
+    <string name="alaram"                                   >提醒</string>
+    <string name="map"                                      >地圖</string>
+    <string name="play_store"                               >Play 應用商店</string>
+    <string name="limited_apps_are_avalible_and_some_apps_and_features_may_not_work_when_ultra_power_saving_mode_is_enabled"
+        >當啟用超級節電模式時，僅有限應用可用，某些應用和功能可能無法正常運作。</string>
+    <string name="add_applications"                         >添加應用</string>
+    <string name="my_message"                               >我的訊息</string>
+    <string name="decreasing_brightness_upto_90"            >降低高達 90％ 的亮度</string>
+    <string name="decreasing_device_performance"            >降低裝置性能</string>
+    <string name="closing_background_apps_and_services"     >關閉背景應用和服務</string>
+    <string name="locking_acess_to_power_consuming_apps"    >鎖定耗電應用的存取</string>
+    <string name="closing_all_power_consuming_functions"    >關閉全部耗電功能</string>
+    <string name="optimize"                                 >優化</string>
+    <string name="optimized"                                >已優化</string>
+    <string name="battery_power_20"                         >電池電量 20％</string>
+    <string name="_16h_21m_remaning"                        >剩餘 16 小時 21 分鐘</string>
+    <string name="extreme"                                  >極端</string>
+    <string name="normal_mode"                              >正常</string>
+    <string name="ultra"                                    >超級</string>
+    <string name="cool_down"                                >冷卻</string>
+    <string name="cooled"                                   >已冷卻</string>
+    <string name="clean"                                    >清除</string>
+    <string name="cleaned"                                  >已清除</string>
+    <string name="cache_memory"                             >快取記憶體</string>
+    <string name="temporary_files"                          >臨時檔案</string>
+    <string name="residual_files"                           >殘留檔案</string>
+    <string name="system_junk"                              >系統垃圾</string>
+    <string name="cpu_scanner1"                             >限制亮度最高達 80％</string>
+    <string name="cpu_scanner2"                             >降低裝置性能</string>
+    <string name="cpu_scanner3"                             >關閉全部耗電 ApplicationsClass</string>
+    <string name="cpu_scanner4"                             >關閉諸如藍芽、螢幕旋轉、同步等系統服務。</string>
+</resources>
