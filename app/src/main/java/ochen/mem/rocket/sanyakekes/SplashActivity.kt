@@ -5,9 +5,15 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import android.widget.Button
+import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
+import com.android.installreferrer.api.InstallReferrerClient
+import com.android.installreferrer.api.InstallReferrerStateListener
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.yandex.metrica.YandexMetrica
+import com.yandex.metrica.YandexMetricaConfig
+import com.yandex.metrica.YandexMetricaDefaultValues
 import ru.mail.aslanisl.mobpirate.MobPirate
 import ochen.mem.rocket.sanyakekes.Constants.adsShow
 import java.util.concurrent.TimeUnit
@@ -63,7 +69,7 @@ class SplashActivity : AppCompatActivity(), AdMobFullscreenManager.AdMobFullscre
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
         MobPirate.getInstance().getTargetUrl(this, intent)
-        setPirateUser()
+        onRefferrer()
     }
 
     private fun setPirateUser() {
@@ -72,13 +78,37 @@ class SplashActivity : AppCompatActivity(), AdMobFullscreenManager.AdMobFullscre
             mFirebaseAnalytics!!.setUserProperty("traffic_id", MobPirate.getInstance().clientId)
             val bundle = Bundle()
             bundle.putString(FirebaseAnalytics.Param.CAMPAIGN, MobPirate.getInstance().clientId)
+            bundle.putString(FirebaseAnalytics.Param.MEDIUM, MobPirate.getInstance().clientId)
             bundle.putString(FirebaseAnalytics.Param.SOURCE, MobPirate.getInstance().clientId)
             bundle.putString(FirebaseAnalytics.Param.ACLID, MobPirate.getInstance().clientId)
             bundle.putString(FirebaseAnalytics.Param.CONTENT, MobPirate.getInstance().clientId)
             bundle.putString(FirebaseAnalytics.Param.CP1, MobPirate.getInstance().clientId)
             bundle.putString(FirebaseAnalytics.Param.VALUE, MobPirate.getInstance().clientId)
             mFirebaseAnalytics!!.logEvent("traffic_id", bundle)
+            mFirebaseAnalytics!!.logEvent(FirebaseAnalytics.Event.APP_OPEN, bundle)
+            mFirebaseAnalytics!!.logEvent(FirebaseAnalytics.Event.CAMPAIGN_DETAILS, bundle)
+
         }
+    }
+
+    private fun onRefferrer() {
+        var client = InstallReferrerClient.newBuilder(this).build()
+        client.startConnection(object : InstallReferrerStateListener {
+            override fun onInstallReferrerSetupFinished(responseCode: Int) {
+                when(responseCode){
+                    InstallReferrerClient.InstallReferrerResponse.OK -> Toast.makeText(this@SplashActivity, "Ok, ${client.installReferrer.installReferrer}", Toast.LENGTH_LONG).show()
+                    InstallReferrerClient.InstallReferrerResponse.DEVELOPER_ERROR -> Toast.makeText(this@SplashActivity, "DEVELOPER_ERROR", Toast.LENGTH_LONG).show()
+                    InstallReferrerClient.InstallReferrerResponse.FEATURE_NOT_SUPPORTED -> Toast.makeText(this@SplashActivity, "FEATURE_NOT_SUPPORTED", Toast.LENGTH_LONG).show()
+                    InstallReferrerClient.InstallReferrerResponse.SERVICE_DISCONNECTED -> Toast.makeText(this@SplashActivity, "SERVICE_DISCONNECTED", Toast.LENGTH_LONG).show()
+                    InstallReferrerClient.InstallReferrerResponse.SERVICE_UNAVAILABLE -> Toast.makeText(this@SplashActivity, "SERVICE_UNAVAILABLE", Toast.LENGTH_LONG).show()
+                }
+            }
+
+            override fun onInstallReferrerServiceDisconnected() {
+                Toast.makeText(this@SplashActivity, "onInstallReferrerServiceDisconnected", Toast.LENGTH_LONG).show()
+            }
+        } )
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -147,8 +177,8 @@ class SplashActivity : AppCompatActivity(), AdMobFullscreenManager.AdMobFullscre
     internal fun goNext() {
         if (!privacyPoliceClicked) {
             val i = Intent(applicationContext, MainActivity::class.java)
-            startActivity(i)
-            finish()
+            //startActivity(i)
+            //finish()
         }
     }
 

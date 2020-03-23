@@ -2,6 +2,7 @@ package ochen.mem.rocket.sanyakekes
 
 import android.app.Activity
 import android.app.ActivityManager
+import android.app.Application
 import android.content.Context
 import android.os.Build
 import android.os.Process
@@ -15,7 +16,7 @@ import com.yandex.metrica.YandexMetrica
 import com.yandex.metrica.YandexMetricaConfig
 import ru.mail.aslanisl.mobpirate.MobPirate
 
-class MyApp : ModuleApplication() {
+class MyApp : Application() {
     override fun attachBaseContext(base: Context) {
         super.attachBaseContext(LocaleHelper.onAttach(base, "en"))
     }
@@ -33,10 +34,6 @@ class MyApp : ModuleApplication() {
         }
 
         SubscriptionProvider.init(this)
-        FacebookSdk.sdkInitialize(applicationContext)
-        setAutoLogAppEventsEnabled(true)
-        AppEventsLogger.activateApp(this)
-        MobPirate.getInstance().init(this, getString(R.string.facebook_app_id))
 
         MobileAds.initialize(this, "ca-app-pub-3050564412171997~7487912829") //ca-app-pub-9387354664905418~6073119457
         // Создание расширенной конфигурации библиотеки.
